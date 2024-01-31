@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+typedef long long ll;
+#define yes cout << "YES\n";
+#define no cout << "NO\n";
+#define fs(lcv, hi) for (int lcv = 0; lcv < hi; lcv++)
+#define fb(lcv, hi) for (lcv = hi; lcv >= 0; lcv--)
+
+using namespace std;
+
+void solve()
+{
+    ll n, k;
+    cin >> n >> k;
+
+    string s = "";
+    char ch = 'a';
+    while (k--)
+    {
+        s += ch;
+        ch++;
+    }
+
+    string ans = "";
+    while (n--)
+        ans += s;
+    cout << ans << endl;
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
+}
